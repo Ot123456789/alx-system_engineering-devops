@@ -40,8 +40,8 @@ frontend techrevolution-tech-frontend
 
 backend techrevolution-tech-backend
     balance roundrobin
-    server 151666-web-01 54.174.243.85:80 check
-    server 151666-web-02 54.165.151.29:80 check
+    server 452210-web-01 54.174.243.85:80 check
+    server 452210-web-02 54.165.151.29:80 check
 "
 
 # shellcheck disable=SC2154
