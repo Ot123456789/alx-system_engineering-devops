@@ -40,11 +40,11 @@ frontend  techrevolution-frontend-http
         default_backend techrevolution-backend
 
 frontend techrevolution-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.techrevolution.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/techrevolution.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend techrevolution-backend
 
-backend techrevolution-tech-backend
+backend techrevolution-backend
     balance roundrobin
     server 452210-web-01 54.174.243.85:80 check
     server 452210-web-02 54.165.151.29:80 check
