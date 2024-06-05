@@ -24,4 +24,3 @@ def number_of_subscribers(subreddit):
         return data.get('data', {}).get('subscribers', 0)
     except (ValueError, KeyError):
         return 0
-
